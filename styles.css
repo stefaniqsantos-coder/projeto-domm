@@ -19,6 +19,13 @@
     --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
 }
 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+
+
 * {
     box-sizing: border-box;
     max-width: 100%;
@@ -39,6 +46,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', cursive;
+}
+
+.app__image{
+animation: bounce 3s ease-in-out infinite;
 }
 
 .app__logo-figure {
